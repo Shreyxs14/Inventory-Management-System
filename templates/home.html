@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Inventory Management System</h1>
+        <ul class="nav">
+            <li><a href="{{ url_for('add_entry') }}">Add Entry</a></li>
+            <li><a href="{{ url_for('edit_entry') }}">Edit Entry</a></li>
+            <li><a href="{{ url_for('search_entry') }}">Search Entry</a></li>
+        </ul>
+    </div>
+</body>
+</html>

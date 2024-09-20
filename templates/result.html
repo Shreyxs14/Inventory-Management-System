@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Results</h1>
+        {% if result %}
+            <ul>
+            {% for row in result %}
+                <li>ID: {{ row[0] }} | Name: {{ row[1] }} | Quantity: {{ row[2] }} | Price: {{ row[3] }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No results found</p>
+        {% endif %}
+    </div>
+</body>
+</html>
