@@ -10,8 +10,8 @@ def connect_db():
     return mysql.connector.connect(
         host="localhost", 
         user="root", 
-        passwd="shre1234", 
-        db="inventory_db"
+        passwd="your password", 
+        db="your database name"
     )
 
 @app.route('/')
